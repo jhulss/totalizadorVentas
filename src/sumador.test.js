@@ -1,7 +1,9 @@
-import sumar from "./sumador.js";
+import totalizadorVentas from "./sumador.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+
+describe("Totalizar", () => {
+  it("deberia mostrar la cantidad de items ingresados", () => {
+    const calcu = new totalizadorVentas();
+    expect(calcu.calcularTotal(3)).toEqual(3);
   });
 });
