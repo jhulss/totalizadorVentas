@@ -1,9 +1,9 @@
 
 class totalizadorVentas
 { 
-    calcularTotal(num)
+    calcularTotal(precio)
     {
-      return num;
+      return precio;
     }
 
 
