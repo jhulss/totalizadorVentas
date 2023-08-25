@@ -1,5 +1,12 @@
-function sumar(a, b) {
-  return a + b;
+
+class totalizadorVentas
+{ 
+    calcularTotal(num)
+    {
+      return num;
+    }
+
+
 }
 
-export default sumar;
+export default totalizadorVentas;
