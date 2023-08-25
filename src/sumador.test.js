@@ -6,4 +6,9 @@ describe("Totalizar", () => {
     const calcu = new totalizadorVentas();
     expect(calcu.calcularTotal(3)).toEqual(3);
   });
+
+  it("deberia mostrar el precio de los items", () => {
+    const calcu = new totalizadorVentas();
+    expect(calcu.calcularTotal(4)).toEqual(4);
+  });
 });
