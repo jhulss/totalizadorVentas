@@ -7,6 +7,10 @@ describe("Totalizar", () => {
     expect(calcu.calcularTotal(4, 4)).toEqual(16);
   });
 
+  it("deberia devolver el porcentaje de impuesto segun el estado", () => {
+    const calcu = new totalizadorVentas();
+    expect(calcu.verificarEstado("UT")).toEqual(6.65);
+  });
   
 
 
