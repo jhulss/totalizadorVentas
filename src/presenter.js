@@ -13,5 +13,5 @@ form.addEventListener("submit", (event) => {
   const secondNumber = Number.parseInt(second.value);
   const calcu = new totalizadorVentas(firstNumber, secondNumber, tird.value);
 
-  div.innerHTML = "<p>" + "Total: " + calcu.calcularTotal(firstNumber, secondNumber) + "<br>" +  "Impuesto de estado: " + calcu.verificarEstado(tird.value) +  "<br>" + "Descuento: " + calcu.calcularDescuento() + "<br>" + "Total Final: " + calcu.totalizador() + "</p>" ;
+  div.innerHTML = "<p>" + "Total: " + calcu.calcularTotal(firstNumber, secondNumber) + "<br>" +  "Impuesto de estado: " + calcu.verificarEstado(tird.value) +  "<br>" + "Descuento: " + calcu.mostrarDescuento() + "<br>" + "Total Final: " + calcu.totalizador() + "</p>" ;
 });

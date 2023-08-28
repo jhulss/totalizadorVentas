@@ -39,6 +39,14 @@ class totalizadorVentas
       return estados[codigo];
     }
 
+
+    mostrarDescuento()
+    {
+      let monto = this.calcularDescuento();
+    
+       return monto;
+    }
+
     calcularDescuento()
     {
       let monto = this.calcularTotal(this.cantidad, this.precio);
@@ -59,9 +67,11 @@ class totalizadorVentas
           break;
         }
       }
+      
       return descuentoAplicado;
     }
 
+  
     
 
 }
