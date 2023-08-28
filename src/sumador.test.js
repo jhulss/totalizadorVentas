@@ -11,6 +11,10 @@ describe("Totalizar", () => {
     const calcu = new totalizadorVentas();
     expect(calcu.verificarEstado("UT")).toEqual(6.65);
   });
+
+
+ 
+
   
 
 

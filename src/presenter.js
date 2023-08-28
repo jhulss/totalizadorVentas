@@ -8,11 +8,10 @@ const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const calcu = new totalizadorVentas();
-  const calcu2 = new totalizadorVentas();
+  
   const firstNumber = Number.parseInt(first.value);
   const secondNumber = Number.parseInt(second.value);
-  
+  const calcu = new totalizadorVentas(firstNumber, secondNumber, tird.value);
 
-  div.innerHTML = "<p>" + "Total: " + calcu.calcularTotal(firstNumber, secondNumber) + "<br>" +  "Impuesto de estado: " + calcu2.verificarEstado(tird.value) + "</p>";
+  div.innerHTML = "<p>" + "Total: " + calcu.calcularTotal(firstNumber, secondNumber) + "<br>" +  "Impuesto de estado: " + calcu.verificarEstado(tird.value) +  "<br>" + "Descuento: " + calcu.calcularDescuento() + "<br>" + "Total Final: " + calcu.totalizador() + "</p>" ;
 });
